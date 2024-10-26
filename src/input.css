@@ -1,15 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.noto-sans-bengali-400 {
+    font-family: "Noto Sans Bengali", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
 
 .form-control {
     @apply mt-1 px-3 py-2 text-xl focus:outline-none active:outline-none block w-full border border-gray-300 rounded-md shadow-sm;
 }
 
 .form-group {
-    @apply flex flex-col gap-1 items-start;
+    @apply flex flex-col gap-1 items-start w-full;
 }
 
 .form-label {
     @apply block text-xl font-medium;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
+
+.sm-col-md-row-section {
+    @apply flex flex-col md:flex-row w-full gap-2 mb-2;
+}
+
+.form-control-section{
+    @apply border border-green-950 py-3 px-2 my-3 rounded-md;
 }
