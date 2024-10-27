@@ -14,7 +14,7 @@
 }
 
 .form-control {
-    @apply mt-1 px-3 py-2 text-xl focus:outline-none active:outline-none block w-full border border-gray-300 rounded-md shadow-sm;
+    @apply mt-1 px-3 py-2 text-xl bg-white text-green-950 focus:outline-none active:outline-none block w-full border border-gray-300 rounded-md shadow-sm;
 }
 
 .form-group {

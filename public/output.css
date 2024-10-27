@@ -1297,10 +1297,6 @@ html{
   display: block;
 }
 
-.inline-block{
-  display: inline-block;
-}
-
 .flex{
   display: flex;
 }
@@ -1335,10 +1331,6 @@ html{
 
 .justify-center{
   justify-content: center;
-}
-
-.justify-between{
-  justify-content: space-between;
 }
 
 .gap-4{
@@ -1414,17 +1406,16 @@ html{
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
-.bg-primary{
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
-}
-
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
 
 .fill-current{
   fill: currentColor;
+}
+
+.p-10{
+  padding: 2.5rem;
 }
 
 .p-2{
@@ -1435,23 +1426,9 @@ html{
   padding: 1.5rem;
 }
 
-.p-10{
-  padding: 2.5rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .py-2{
@@ -1469,16 +1446,16 @@ html{
   line-height: 1.25rem;
 }
 
+.font-bold{
+  font-weight: 700;
+}
+
 .font-medium{
   font-weight: 500;
 }
 
 .font-semibold{
   font-weight: 600;
-}
-
-.font-bold{
-  font-weight: 700;
 }
 
 .text-green-600{
@@ -1504,11 +1481,6 @@ html{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-primary-content{
-  --tw-text-opacity: 1;
-  color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
 }
 
 .shadow-lg{
@@ -1540,12 +1512,16 @@ html{
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(5 46 22 / var(--tw-text-opacity));
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1620,10 +1596,5 @@ html{
 @media (min-width: 768px){
   .md\:w-\[65vw\]{
     width: 65vw;
-  }
-
-  .md\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 }
