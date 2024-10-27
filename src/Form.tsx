@@ -266,16 +266,6 @@ const Form = () => {
                     </div>
                     <div className='sm-col-md-row-section'>
                         <div className='form-group'>
-                            <label className='form-label required'>জাতীয় পরিচয়পত্র নং</label>
-                            <input
-                                type='number'
-                                name='nid'
-                                onChange={handleInputChange}
-                                className='form-control'
-                                required
-                            />
-                        </div>
-                        <div className='form-group'>
                             <label className='form-label required'>পেশা এবং পদবি</label>
                             <input
                                 type='text'
@@ -300,13 +290,13 @@ const Form = () => {
                             />
                         </div>
                         <div className='form-group'>
-                            <label className='form-label required'>রেজিস্ট্রেশন ফি এর জন্য শিক্ষার্ষ নির্বাচন করুন</label>
+                            <label className='form-label required'>রেজিস্ট্রেশন ফি এর জন্য দাখিল শিক্ষাবর্ষ নির্বাচন করুন</label>
                             <select
                                 name='costCenter'
                                 onChange={handleInputChange}
                                 className='form-control'
                             >
-                                <option value=''>শিক্ষার্ষ নির্বাচন করুন</option>
+                                <option value=''> দাখিল শিক্ষাবর্ষ নির্বাচন করুন</option>
                                 <option value='2500'>শুরু থেকে ২০১৪ (২৫০০/=টাকা মাত্র)</option>
                                 <option value='2000'>২০১৫ থেকে ২০২০ (২০০০/=টাকা মাত্র)</option>
                                 <option value='1000'>২০২১ থেকে বর্তমান (১০০০/=টাকা মাত্র)</option>

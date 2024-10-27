@@ -31,9 +31,9 @@
 }
 
 .sm-col-md-row-section {
-    @apply flex flex-col md:flex-row w-full gap-2 mb-2;
+    @apply grid grid-cols-1 md:grid-cols-2 w-full gap-2 mb-2;
 }
 
-.form-control-section{
+.form-control-section {
     @apply border border-green-950 py-3 px-2 my-3 rounded-md;
 }
